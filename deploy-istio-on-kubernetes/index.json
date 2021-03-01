@@ -3,8 +3,8 @@
     "pathwayId": "istio",
     "pathwayTitle": "Istio",
     "icon": "fa-istio",
-    "title": "Get Started with Istio",
-    "description": "Istio Service Mesh",
+    "title": "Get Started with Istio and Kubernetes",
+    "description": "Learn how to get started with Istio Service Mesh and Kubernetes",
     "authenticated": false,
     "details": {
         "steps": [
@@ -19,12 +19,20 @@
                 "text": "step2.md"
             },
             {
+                "title": "Istio Architecture",
+                "text": "step2a.md"
+            },
+            {
                 "title": "Deploy Istio Metrics and Tracing",
                 "text": "step3.md"
             },
             {
                 "title": "Deploy Sample Application",
                 "text": "step4.md"
+            },
+            {
+                "title": "Bookinfo Architecture",
+                "text": "step5.md"
             },
             {
                 "title": "Control Routing",
@@ -51,7 +59,7 @@
     "environment": {
         "showdashboard": true,
         "dashboard": "Dashboard",
-        "uilayout": "terminal",
+        "uilayout": "terminal-terminal-v1",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
         "uidependencies": [
             "/socket.io/socket.io.js",
