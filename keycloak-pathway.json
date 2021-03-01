@@ -4,18 +4,18 @@
     "icon": "fa-katacoda",
     "courses": [
       {
-        "course_id": "Lab 1 : configure-keycloak",
-        "title": "Configure Keycloak",
+        "course_id": "configure-keycloak",
+        "title": "LAB 1 - Configure Keycloak",
         "description": "Set up your first Realm, Role and User."
       },
       {
-        "course_id": "Lab 2: secure-service",
-        "title": "Secure a service",
+        "course_id": "secure-service",
+        "title": "Lab 2 - Secure a service",
         "description": "Secure a service, obtain a token and make a secure request."
       },
       {
-        "course_id": "Lab 3: secure-application",
-        "title": "Secure an application",
+        "course_id": "secure-application",
+        "title": "Lb 3 - Secure an application",
         "description": "Secure an application, log in and make a secure request."
       }
     ]
