@@ -1,2 +1,2 @@
-# katacoda-scenarios
-katacoda scenario for main technologies stack
+# istio-workshop
+Katacoda files for the Istio Workshop
