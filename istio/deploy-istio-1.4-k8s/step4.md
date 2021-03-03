@@ -7,7 +7,7 @@ The default Istio installation uses automatic sidecar injection. Label the names
 
 Deploy your application using the kubectl command:
 
-`kubectl apply -f istio-1.4.6/samples/bookinfo/platform/kube/bookinfo.yaml`{{execute}}
+`kubectl apply -f istio-1.5.1/samples/bookinfo/platform/kube/bookinfo.yaml`{{execute}}
 
 
 >If you disabled automatic sidecar injection during installation and rely on manual sidecar injection, use the istioctl kube-inject command to modify the bookinfo.yaml file before deploying your application.
