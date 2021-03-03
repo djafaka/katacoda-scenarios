@@ -1,0 +1,22 @@
+{
+    "title": "Workshop Keycloak - RHSSO - DEMO TRAINING FOR IOT TEAM",
+    "description": "A series of scenarios that will teach you how to setup and use Keycloak for your daily projects...",
+    "icon": "fa-katacoda",
+    "courses": [
+      {
+        "course_id": "deploy-istio-1.4-k8s",
+        "title": "LAB 1 - Getting Started with Istio ",
+        "description": "Get Started with Istio 1.5 "
+      },
+      {
+        "course_id": "deploy-istio-on-kubernetes",
+        "title": "Lab 2 - Get Started with Istio on Kubernetes",
+        "description": "Get Started with Istio."
+      },
+      {
+        "course_id": "eventstore-workshop",
+        "title": "Lab 3 - Eventstore",
+        "description": "Secure an application, log in and make a secure request."
+      }
+    ]
+}
