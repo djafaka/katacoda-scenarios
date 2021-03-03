@@ -1,6 +1,6 @@
 {
-    "title": "Workshop Keycloak - RHSSO - DEMO TRAINING FOR IOT TEAM",
-    "description": "A series of scenarios that will teach you how to setup and use Keycloak for your daily projects...",
+    "title": "Workshop Istio - DEMO TRAINING FOR IOT TEAM",
+    "description": "A series of scenarios that will teach you how to setup and Get start with Istio ...",
     "icon": "fa-katacoda",
     "courses": [
       {
