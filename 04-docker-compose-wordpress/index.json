@@ -1,0 +1,70 @@
+{
+  "title": "04. Docker-Compose - WordPress",
+  "description": "This scenario will show you how to start working with Docker CLI",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Create simple WordPress stack",
+        "text": "step1.md",
+        "answer": "step1-answer.md"
+      },
+      {
+        "title": "Step 2 - Let others customize it",
+        "text": "step2.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "Step 3 - Overlay the files",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Scale it!",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Clean up",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yml",
+          "target": "~/tutorial/"
+        },
+        {
+          "file": ".env",
+          "target": "~/tutorial/"
+        },
+        {
+          "file": "docker-compose.dev.yml",
+          "target": "~/tutorial/"
+        }
+      ]
+    }
+  },
+  "files": [
+    "docker-compose.yml",
+    ".env",
+    "docker-compose.dev.yml"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "WordPress App",
+        "port": 8080
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

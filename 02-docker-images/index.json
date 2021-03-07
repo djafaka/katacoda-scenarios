@@ -1,0 +1,57 @@
+{
+  "title": "02. Docker Images #1",
+  "description": "This scenario will show you how to start creating your own Docker Images",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - List and pull images",
+        "text": "step1.md",
+        "verify": "step1-verify.sh"
+      },
+      {
+        "title": "Step 2 - Remove images",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Building own image",
+        "text": "step3.md",
+        "answer": "step3-answer.md",
+        "verify": "step3-verify.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "*",
+          "target": "~/tutorial/"
+        }
+      ]
+    }
+  },
+  "files": [
+    "Dockerfile"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Prod App",
+        "port": 81
+      },
+      {
+        "name": "Dev App",
+        "port": 82
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
