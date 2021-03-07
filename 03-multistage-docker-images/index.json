@@ -1,14 +1,14 @@
 {
-  "title": "03. Multistage Docker images",
-  "description": "This scenario will show you how to start creating your own Docker Images",
+  "title": "Lab 03. Multistage Docker images",
+  "description": "Ce scénario vous montrera comment commencer à créer vos propres images Docker",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Clone the repo",
+        "title": "Step 1 - Clone du repo",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Build the app",
+        "title": "Step 2 - Build de l'application",
         "text": "step2.md",
         "answer": "step2-answer.md",
         "courseData": "create-dockerignore.sh"
@@ -19,7 +19,7 @@
         "answer": "step3-answer.md"
       },
       {
-        "title": "Step 4 - Optimize it!",
+        "title": "Step 4 - Optimisation ",
         "text": "step4.md",
         "answer": "step4-answer.md"
       }

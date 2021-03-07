@@ -1,19 +1,19 @@
 {
-  "title": "02. Docker Images #1",
-  "description": "This scenario will show you how to start creating your own Docker Images",
+  "title": "Lab 02. Docker Images #1",
+  "description": "Ce scénario vous montrera comment commencer à créer vos propres images Docker",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - List and pull images",
+        "title": "Etape 1 - Affichage et  pull images",
         "text": "step1.md",
         "verify": "step1-verify.sh"
       },
       {
-        "title": "Step 2 - Remove images",
+        "title": "Etape 2 - Suppression d'images",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Building own image",
+        "title": "Step 3 - Construire sa propre image",
         "text": "step3.md",
         "answer": "step3-answer.md",
         "verify": "step3-verify.sh"
@@ -52,6 +52,6 @@
     ]
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "ubuntu:1804"
   }
 }

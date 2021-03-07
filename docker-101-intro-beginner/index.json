@@ -1,0 +1,49 @@
+{
+  "title": "Docker 101 - Introduction Overview for Beginners",
+  "description": "Discover the basics of Docker and Container (Container Isolation, PID and logs)",
+  "time":"45min", 
+  "details": {
+    "steps": [
+      {
+        "title": "Container vs Virtual Machine",
+        "text": "step1.md"
+      },
+      {
+        "title": "Basics command line",
+        "text": "step2.md"
+      },
+      {
+        "title": "Basics command line",
+        "text": "step3.md"
+      },
+      {
+        "title": "Container PID & Host Process",
+        "text": "step4.md"
+      },
+      {
+        "title": "Container PID & Host Process",
+        "text": "step5.md"
+      },
+      {
+        "title": "Container Logs",
+        "text": "step6.md"
+      },
+      {
+        "title": "Container Logs",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
