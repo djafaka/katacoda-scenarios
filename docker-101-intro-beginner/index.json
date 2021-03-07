@@ -1,6 +1,6 @@
 {
-  "title": "Docker 101 - Introduction Overview for Beginners",
-  "description": "Discover the basics of Docker and Container (Container Isolation, PID and logs)",
+  "title": "Docker Introduction pour debutants",
+  "description": "Decouverte des fondamentaux de Docker(Container Isolation, PID et logs)",
   "time":"45min", 
   "details": {
     "steps": [
@@ -9,27 +9,27 @@
         "text": "step1.md"
       },
       {
-        "title": "Basics command line",
+        "title": "Ligne de commande de base",
         "text": "step2.md"
       },
       {
-        "title": "Basics command line",
+        "title": "Ligne de commande de base",
         "text": "step3.md"
       },
       {
-        "title": "Container PID & Host Process",
+        "title": "Conteneur:  PID & Host Process",
         "text": "step4.md"
       },
       {
-        "title": "Container PID & Host Process",
+        "title": "Comnteneur: PID & Host Process",
         "text": "step5.md"
       },
       {
-        "title": "Container Logs",
+        "title": "Conteneurs Logs",
         "text": "step6.md"
       },
       {
-        "title": "Container Logs",
+        "title": "Conteneurs Logs",
         "text": "step7.md"
       }
     ],
