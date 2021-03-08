@@ -1,15 +1,29 @@
-Now, we want to run things. Let's start with running a single nginx container.
+Dans cette section, nous verrons comment procéder en utilisant deux méthodes différentes: 
+la commande de validation Docker et la construction automatisée Dockerfile.
 
-Pour executer le conteneur vous devez disposer d'une image. Pour en trouver une, lancez `docker search nginx`{{execute}} ou naviguer sur [https://hub.docker.com/](https://hub.docker.com/).
+Docker commit
+-------------
+
+Commençons par un exemple et préparons une image avec la boîte à outils Git et JDK. 
+Nous utiliserons Ubuntu 18.04 comme image de base.
+
+Il n'est pas nécessaire de le créer; la plupart des images de base sont disponibles dans le registre Docker Hub.
+
+1. Exécutez un conteneur depuis ubuntu: 18.04 et connectez-le à sa ligne de commande:
+
+ Lancez `docker run -i -t ubuntu:18.04 /bin/bash`{{execute}}
 
 
-Vous pouvez utiliser des balises (visibles uniquement via le navigateur Web) pour exécuter une version spécifique de nginx ou simplement utiliser `latest` (default):
-`docker run -d --name my_nginx nginx`{{execute}}. YVous devez ajouter l'option _-d_ pour lancer le conteneur en arrière plan. Autrement il fonctionnerait sur votre terminal.
-Vous devrez obtenir un hash (ID) du conteneur comme sortie.
+Nous avons extrait l'image ubuntu: 18.04, l'avons exécutée en tant que conteneur, puis appelé la commande / bin / bash de manière interactive (indicateur -i). 
+Vous devriez voir le terminal du conteneur. Étant donné que les conteneurs sont avec état et inscriptibles, nous pouvons faire tout ce que nous voulons dans son terminal.
 
-Pour verifier qu'il s'execute, lancez la commande `docker ps`{{execute}}.`
+2. Installer Git
 
-Vous pouvez trouver des détails de bas niveau sur de nombreux objets Docker (conteneurs, images, réseaux) en exécutant `docker inspect`.
-Essayez d'inspecter votre conteneur avec la commande: `docker inspect my_nginx`{{execute}} et l'image que vous utilisez `docker inspect nginx`{{execute}}.
+Lancez `apt-get update`{{execute}}
 
-Vous pouvez afficher ses processus en exécutant `docker top my_nginx`{{execute}} et ouvrez bash en exécutant `docker exec -it my_nginx bash`. N'hésitez pas à parcourir les fichiers dans le conteneur.
+Lancez `apt-get install -y git`{{execute}}
+
+Verifiez ensuite que Git est bien installe
+
+`which git`{{execute}}
+
