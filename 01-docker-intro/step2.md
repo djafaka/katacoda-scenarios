@@ -9,7 +9,7 @@ Nous utiliserons Ubuntu 18.04 comme image de base.
 
 Il n'est pas nécessaire de le créer; la plupart des images de base sont disponibles dans le registre Docker Hub.
 
-1. Exécutez un conteneur depuis ubuntu: 18.04 et connectez-le à sa ligne de commande:
+1) Exécutez un conteneur depuis ubuntu: 18.04 et connectez-le à sa ligne de commande:
 
  Lancez `docker run -i -t ubuntu:18.04 /bin/bash`{{execute}}
 
@@ -17,7 +17,7 @@ Il n'est pas nécessaire de le créer; la plupart des images de base sont dispon
 Nous avons extrait l'image ubuntu: 18.04, l'avons exécutée en tant que conteneur, puis appelé la commande / bin / bash de manière interactive (indicateur -i). 
 Vous devriez voir le terminal du conteneur. Étant donné que les conteneurs sont avec état et inscriptibles, nous pouvons faire tout ce que nous voulons dans son terminal.
 
-2. Installer Git
+2) Installer Git
 
 Lancez `apt-get update`{{execute}}
 
