@@ -8,7 +8,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Démarrer son premier conteneur",
+        "title": "Step 2 - COnstruire ses propres images Docker",
         "text": "step2.md",
         "verify": "step2-verify.sh"
       },
