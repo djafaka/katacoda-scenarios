@@ -1,9 +1,10 @@
-Creating a new Dockerfile is easy. Follow alone to make a new directory and initialize a new, empty Dockerfile.
+Créer un nouveau Dockerfile est facile. 
+Suivez les etapes suivantes pour créer un nouveau répertoire et initialiser un nouveau Dockerfile vide.
 
-1\. Create a Dockerfile inside this directory:
+1\. Creation d'un fichier Dockerfile sous le repertoire:
 
 ```
-$ cd myimage
+$ cd monimage
 $ vim Dockerfile
 ```
 
@@ -11,7 +12,7 @@ $ vim Dockerfile
   
 2\. Copy the following text inside the new Dockerfile:
 
-<pre class="file" data-filename="Dockerfile" data-target="append"><blockquote>
+<pre class="file" data-filename="monimage\Dockerfile" data-target="append"><blockquote>
 FROM ubuntu
 RUN apt-get -y update
 RUN apt-get install -y figlet

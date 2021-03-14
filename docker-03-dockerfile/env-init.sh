@@ -1,1 +1,1 @@
-echo "Your lab environment is ready to go!"
+echo "Votre environement est pret !"
