@@ -36,14 +36,16 @@ Vous en aurez besoin pour accéder à l'image.
 
 Exécutez la commande suivante sur le terminal:
 
+Recuperation de l'ID du conteneur:
+
 ```
-var=`docker ps | tail -1 | awk '{ print $1 }'` 
+idConteneur=`docker ps | tail -1 | awk '{ print $1 }'` 
 ```{{execute}}
 
-echo $var
 
+Puis entrez dans le terminal du conteneur:
 
-docker exec -it ID_CONTENEUR bash
+ `docker exec -it $idConteneur bash`{{execute}}
 
 
 Où ID_CONTAINER est l'ID qui vous est présenté lorsque vous avez exécuté la commande d'exécution.
