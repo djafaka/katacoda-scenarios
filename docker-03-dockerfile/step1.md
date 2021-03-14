@@ -8,9 +8,9 @@ $ cd monimage
 $ vim Dockerfile
 ```
 
->NOTE: Vim is used by default, feel free to use another available text editor. Ask the instructor if this is confusing.
+>NOTE: Vim est utilisé par défaut, n'hésitez pas à utiliser un autre éditeur de texte disponible.
   
-2\. Copy the following text inside the new Dockerfile:
+2\. Copiez le texte suivant dans le nouveau Dockerfile:
 
 <pre class="file" data-filename="monimage\Dockerfile" data-target="append"><blockquote>
 FROM ubuntu
@@ -18,7 +18,7 @@ RUN apt-get -y update
 RUN apt-get install -y figlet
 </blockquote></pre>
 
-3\. After saving the file, execute as follows:
+3\. Après avoir enregistré le fichier, exécutez comme suit:
 
 `docker build -t myfiglet .`{{execute}}
 
@@ -40,18 +40,18 @@ Removing intermediate container xxxxxxxxxxxx
 Successfully built xxxxxxxxxxxx
 ```
 
->NOTE: Number's will defer depending on the build number, per host.
+>NOTE: Les nombres seront différés en fonction du numéro de build, par hôte.
 
-4\. Okay, spin up the new image using the (-it) to ensure our container is interactive. 
+4\. Faites tourner la nouvelle image en utilisant le (-it) pour vous assurer que notre conteneur est interactif. 
 
 `docker run -it myfiglet`{{execute}}
 
 
-5\. Now, the fun part! To confirm success, give it the following command, which is unique to Figlet:
+5\. Maintenant, la partie amusante! Pour confirmer le succès, donnez-lui la commande suivante, qui est unique à Figlet:
 
 `figlet hello`{{copy}}
 
 _Pretty cool, huh?_
 
-And of course, be sure to exit out of your container:
+Et bien sûr, assurez-vous de sortir de votre conteneur:
 `exit`{{copy}}
