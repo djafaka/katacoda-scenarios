@@ -1,5 +1,5 @@
-This step will show us how to add two important Dockerfile commands: `CMD` and `ENTRYPOINT`. These two commands are often used and can be of great benefit.
-These commands allow us to set a default command to run in our container.
+Cette étape nous montrera comment ajouter deux commandes Dockerfile importantes: `CMD` et `ENTRYPOINT`. Ces deux commandes sont souvent utilisées et peuvent être très utiles. Ces commandes nous permettent de définir une commande par défaut à exécuter dans notre conteneur.
+
 
 1\. We want to greet people who run a container from our image with a nice hello, and
 we want a custom font to be used. For that, we will use the `CMD` to bake `figlet -f script hello` inside our Dockerfile Image.

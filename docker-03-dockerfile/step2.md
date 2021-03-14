@@ -1,8 +1,8 @@
-1\. Issue a command to see the history of our newest Dockerfile:
+1\. Lancez la commande suivante pour voir l'historique de notre dernier Dockerfile:
 
 `docker history myfiglet`{{execute}}
 
-2\. Let's change our Dockerfile to include JSON syntax, as follows:
+2\. Modifions notre Dockerfile pour inclure la syntaxe JSON, comme suit:
 
 <pre class="file" data-filename="Dockerfile" data-target="replace"><blockquote>
 FROM ubuntu
@@ -10,7 +10,7 @@ RUN apt-get update
 RUN ["apt-get", "install", "figlet"]
 </blockquote></pre>
 
-3\. Then, build the new Dockerfile again, just as we did before:
+3\. Ensuite, créez à nouveau le nouveau Dockerfile, comme nous l'avons fait auparavant:
 
 `$ docker build -t myfiglet .`{{execute}}
 
@@ -21,7 +21,7 @@ Output:
 Successfully built xxxxxxxxxxxx
 ```
 
-4\. Now, compare the new history along side the other:
+4\. Maintenant, comparez la nouvelle histoire avec l'autre:
 
 `docker history myfiglet`{{execute}}
 
