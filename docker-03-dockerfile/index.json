@@ -1,13 +1,13 @@
 {
 
-    "title": "Creation et Execution d'un fichier Dockerfile",
+    "title": "Création et Exécution d'un fichier Dockerfile",
     "description": "Creation et Execution d'un Dockerfile.",
     "difficulty": "Intermediate",
     "time": "25-30 minutes",
     "details": {
         "steps": [
             {
-                "title": "Creation et Execution d'un fichier Dockerfile",
+                "title": "Création et Exécution d'un fichier Dockerfile",
                 "text": "step1.md"
             },
             {
