@@ -47,13 +47,9 @@ Puis entrez dans le terminal du conteneur:
 
  `docker exec -it $idConteneur bash`{{execute}}
 
-
-Où ID_CONTAINER est l'ID qui vous est présenté lorsque vous avez exécuté la commande d'exécution.
-
-
 Après avoir exécuté cette commande, vous vous retrouverez dans le terminal du conteneur en cours d'exécution. 
-Maintenant, ajoutons le logiciel nécessaire pour le modèle. 
+Maintenant, ajoutons quelques outils nécessaire pour le modèle. 
 
-Pour ce faire, exécutez les commandes suivantes:
+Pour ce faire, exécutez les commandes suivantes pour installer l'outil git a l'image existante:
 
-
+`apt-get install  git -y`{{execute}}
