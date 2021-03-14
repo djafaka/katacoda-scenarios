@@ -20,6 +20,7 @@ Il n'est pas nécessaire de le créer; la plupart des images de base sont dispon
 
 Ensuite, nous allons l'exécuter de manière à pouvoir utiliser la fenêtre du terminal comme ceci:
 
+
 `docker run --name mon-template-base -p 8080:80 -e TERM=xterm -d nginx`{{execute}}
 
 Nous avons nommé ce nginx-template-base car ce sera sur quoi sera basé notre modèle.
@@ -33,7 +34,12 @@ Ensuite, nous devons accéder au conteneur.
 Lorsque vous avez exécuté la commande docker run, elle vous aura présenté un long numéro d'identification. 
 Vous en aurez besoin pour accéder à l'image. 
 
-Exécutez la commande suivante sur le terminal
+Exécutez la commande suivante sur le terminal:
+
+var=`docker ps | tail -1 | awk '{ print $1 }'` 
+```{{execute}}
+echo $var
+
 
 docker exec -it ID_CONTENEUR bash
 
