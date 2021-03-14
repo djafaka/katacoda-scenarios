@@ -71,7 +71,6 @@ Pour valider les modifications et créer une nouvelle image basée sur lesdites 
 
  Si vous émettez les images de menu fixe de commande, vous devriez maintenant voir le nouveau conteneur:
 
-
 `docker images`{{execute}}
 
 À ce stade, vous pouvez créer un nouveau conteneur, en utilisant la nouvelle image, et avoir toutes les modifications déjà en place. 
@@ -79,6 +78,10 @@ Pour valider les modifications et créer une nouvelle image basée sur lesdites 
 N'oubliez pas que lorsque vous exécutez le nouveau conteneur, la commande ressemblerait à quelque chose comme suit:
 
 `docker run --name nginx-dev -p 8082:80 -e TERM=xterm -d nginx-template`{{execute}}
+
+Lancez la commande d'affichage des conteneurs suivante, ou vous pouvez constater que le mouveau conteneur mginx-dev est bien cree a partir de notre template mon-temnplate-base:
+
+`docker ps`{{execute}}
 
 Si vous accédez à ce nouveau conteneur en cours d'exécution (à l'aide de la commande sudo docker exec), vous verrez maintenant que toutes les modifications sont en place et prêtes à être utilisées (en particulier git qui est installe):
 
@@ -89,4 +92,12 @@ idConteneur2=`docker ps | head -2 | tail -1 | awk '{ print $1 }'`
 Puis entrez dans le terminal du conteneur:
 
  `docker exec -it $idConteneur2 bash`{{execute}}
+
+Et lancer la commande git qui doit s'afficher:
+
+`git `{{execute}}
+
+Passons a present a la seconde option, avec l'utilisation de fichier Dockerfile
+
+Utilisation de fichier Dockerfile
 
