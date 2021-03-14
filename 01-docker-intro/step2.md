@@ -36,8 +36,10 @@ Vous en aurez besoin pour accéder à l'image.
 
 Exécutez la commande suivante sur le terminal:
 
+```
 var=`docker ps | tail -1 | awk '{ print $1 }'` 
 ```{{execute}}
+
 echo $var
 
 
