@@ -50,7 +50,27 @@ Puis entrez dans le terminal du conteneur:
 Après avoir exécuté cette commande, vous vous retrouverez dans le terminal du conteneur en cours d'exécution. 
 Maintenant, ajoutons quelques outils nécessaire pour le modèle. 
 
-Pour ce faire, exécutez les deux commandes suivantes pour installer l'outil git a l'image existante:
+Pour ce faire, exécutez les deux commandes succesives suivantes pour installer l'outil git a l'image existante:
 
 `apt update`{{execute}}
+
+Puis la commande:
+
 `apt-get install  git -y`{{execute}}
+
+Étape 3: Valider les modifications
+
+Maintenant que nous avons modifié le conteneur, nous devons valider les modifications. 
+
+Quittez d'abord le conteneur avec la commande exit:
+
+`exit`{{execute}}
+Pour valider les modifications et créer une nouvelle image basée sur lesdites modifications, exécutez la commande:
+
+ `docker commit $idConteneur nginx-template`{{execute}}
+
+ Si vous émettez les images de menu fixe de commande, vous devriez maintenant voir le nouveau conteneur:
+
+
+`docker images`{{execute}}
+
