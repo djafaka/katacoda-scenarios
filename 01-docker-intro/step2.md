@@ -25,9 +25,6 @@ Ensuite, nous allons l'exécuter de manière à pouvoir utiliser la fenêtre du 
 
 Nous avons nommé ce nginx-template-base car ce sera sur quoi sera basé notre modèle.
 
-Lancez la commande suivante pour afficjer l'image que vous venez de 
-
-
 Étape 2: Accès et modification du conteneur
 
 Ensuite, nous devons accéder au conteneur. 
@@ -109,7 +106,16 @@ Par exemple:
 Pour arrêter un conteneur en cours d'exécution, utilisez l'option docker stop avec le nom du conteneur
 que vous souhaiter arrêter, ici par exemple le second conteneur:
 
- `docker stop  $idConteneur2 bash`{{execute}}
+ `docker stop  $idConteneur2`{{execute}}
+
+ Pour supprimer un conteneurm utilisez la commande docker rm <ID_CONTENEUR>
+
+ Par Exemple
+
+
+`exit`{{execute}}
+ `docker rm $idConteneur2`{{execute}}
+
 
 
 Passons a present a la seconde option, avec l'utilisation de fichier Dockerfile
