@@ -9,7 +9,9 @@
       },
       {
         "title": "Etape 2 - Construire ses propres images Docker",
-        "text": "step2.md"
+        "text": "step2.md",
+         "answer": "step2-answer.md",
+        "courseData": "create-dockerignore.sh"
       },
       {
         "title": "Step 3 - Exposition de ports",
@@ -39,10 +41,18 @@
       ]
     }
   },
+  "files": [
+    "Dockerfile"
+  ],
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "ubuntu:1804"
   }
+  
+
+  
 }
+
+
