@@ -112,8 +112,6 @@ que vous souhaiter arrêter, ici par exemple le second conteneur:
 
  Par Exemple
 
-
-`exit`{{execute}}
  `docker rm $idConteneur2`{{execute}}
 
 
@@ -124,7 +122,11 @@ Utilisation de fichier Dockerfile
 ---------------------------------
 
 
+Commencons deja par supprimer toutes les instances Docker en cours d'execution avec la commande suivante:
 
+ `docker stop $(docker ps -a -q)`{{execute}}
+
+  `docker rm $(docker ps -a -q)`{{execute}}
 
 
 
