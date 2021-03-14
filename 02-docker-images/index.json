@@ -10,7 +10,8 @@
       },
       {
         "title": "Etape 2 - Suppression d'images",
-        "text": "step2.md"
+        "answer": "step2-answer.md",
+        "courseData": "create-dockerignore.sh"
       },
       {
         "title": "Step 3 - Construire sa propre image",
