@@ -129,4 +129,15 @@ Commencons deja par supprimer toutes les instances Docker en cours d'execution a
   `docker rm $(docker ps -a -q)`{{execute}}
 
 
+Pour démarrer la construction, nous aurons besoin du Node 9. Basez votre image sur une version légère de Linux Alpine.
 
+<pre class="file" data-filename="Dockerfile" data-target="replace">
+FROM node:9-alpine as node-builder
+</pre>
+
+Pour utiliser le cache de construction lorsqu'il est disponible, nous avons déjà ajouté `Dockerfile` à` .dockerignore` afin qu'il ne soit pas copié dans le contexte de construction.
+
+Maintenant, copiez les fichiers sur l'image et construisez l'application en utilisant `yarn install` et` yarn build`.
+Les artefacts de construction seront stockés dans le répertoire `build`.
+
+Construisez votre image Docker en utilisant `docker build .` {{execute}}.
