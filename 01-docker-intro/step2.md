@@ -75,7 +75,7 @@ Pour valider les modifications et créer une nouvelle image basée sur lesdites 
 
 À ce stade, vous pouvez créer un nouveau conteneur, en utilisant la nouvelle image, et avoir toutes les modifications déjà en place. 
 
-N'oubliez pas que lorsque vous exécutez le nouveau conteneur, la commande ressemblerait à quelque chose comme suit:
+Lancez un nouveau conteneur a partir de notre template, la commande ressemblerait à quelque chose comme suit:
 
 `docker run --name nginx-dev -p 8082:80 -e TERM=xterm -d nginx-template`{{execute}}
 
@@ -97,7 +97,28 @@ Et lancer la commande git qui doit s'afficher:
 
 `git `{{execute}}
 
+Pour afficher les journaux d'un conteneur en cours d'execution lancez la commande docker logs.
+
+Par exemple:
+
+
+`exit`{{execute}}
+ `docker logs $idConteneur2`{{execute}}
+
+
+Pour arrêter un conteneur en cours d'exécution, utilisez l'option docker stop avec le nom du conteneur
+que vous souhaiter arrêter, ici par exemple le second conteneur:
+
+ `docker stop  $idConteneur2 bash`{{execute}}
+
+
 Passons a present a la seconde option, avec l'utilisation de fichier Dockerfile
 
 Utilisation de fichier Dockerfile
+---------------------------------
+
+
+
+
+
 
