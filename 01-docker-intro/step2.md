@@ -50,6 +50,7 @@ Puis entrez dans le terminal du conteneur:
 Après avoir exécuté cette commande, vous vous retrouverez dans le terminal du conteneur en cours d'exécution. 
 Maintenant, ajoutons quelques outils nécessaire pour le modèle. 
 
-Pour ce faire, exécutez les commandes suivantes pour installer l'outil git a l'image existante:
+Pour ce faire, exécutez les deux commandes suivantes pour installer l'outil git a l'image existante:
 
+`apt update`{{execute}}
 `apt-get install  git -y`{{execute}}
