@@ -82,6 +82,7 @@ N'oubliez pas que lorsque vous exécutez le nouveau conteneur, la commande resse
 
 Si vous accédez à ce nouveau conteneur en cours d'exécution (à l'aide de la commande sudo docker exec), vous verrez maintenant que toutes les modifications sont en place et prêtes à être utilisées (en particulier git qui est installe):
 
+```
 idConteneur2=`docker ps | head -2 | tail -1 | awk '{ print $1 }'`
 ```{{execute}}
 
