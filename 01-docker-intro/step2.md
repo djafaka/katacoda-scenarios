@@ -74,3 +74,18 @@ Pour valider les modifications et créer une nouvelle image basée sur lesdites 
 
 `docker images`{{execute}}
 
+À ce stade, vous pouvez créer un nouveau conteneur, en utilisant la nouvelle image, et avoir toutes les modifications déjà en place. 
+
+N'oubliez pas que lorsque vous exécutez le nouveau conteneur, la commande ressemblerait à quelque chose comme suit:
+
+`docker run --name nginx-dev -p 8082:80 -e TERM=xterm -d nginx-template`{{execute}}
+
+Si vous accédez à ce nouveau conteneur en cours d'exécution (à l'aide de la commande sudo docker exec), vous verrez maintenant que toutes les modifications sont en place et prêtes à être utilisées (en particulier git qui est installe):
+
+idConteneur2=`docker ps | head -2 | tail -1 | awk '{ print $1 }'`
+```{{execute}}
+
+Puis entrez dans le terminal du conteneur:
+
+ `docker exec -it $idConteneur2 bash`{{execute}}
+
