@@ -1,4 +1,4 @@
-The environment has a Jenkins server running as a Docker Container. You can view the status using `docker ps`{{execute}}.
+The environment has a Jenkins server running as a Docker container. You can view the status using `docker ps`{{execute}}.
 
 The command used to launch the container was:
 
