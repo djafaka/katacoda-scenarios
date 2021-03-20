@@ -1,3 +1,3 @@
-In this scenario you'll learn how to configure Jenkins to build Docker Images based on a Dockerfile. The scenario is designed to demostrate how you can use Docker within a CI/CD pipeline, using Images as a build artefact that can be promoted to different environments and finally production.
+Dans ce scénario, vous apprendrez à configurer Jenkins pour créer des images Docker basées sur un Dockerfile. Le scénario est conçu pour démontrer comment vous pouvez utiliser Docker dans un pipeline CI / CD, en utilisant des images comme un artefact de construction qui peut être promu dans différents environnements et enfin en production.
 
-The environment pre-configured and running Jenkins build server for you to experiment and learn how it works. The steps guide you to installing the plugin, creating a build and viewing the results.
+L'environnement préconfiguré et exécutant le serveur de génération Jenkins pour que vous puissiez expérimenter et apprendre comment cela fonctionne. Les étapes vous guident pour installer le plugin, créer une compilation et afficher les résultats.
