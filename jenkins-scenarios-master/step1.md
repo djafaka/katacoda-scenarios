@@ -1,21 +1,34 @@
-The environment has a Jenkins server running as a Docker container. You can view the status using `docker ps`{{execute}}.
+Cet etape de notre atelier, correspond a l'installation de Jenkins.
 
-Prepare the volume directory: We need a separate directory with admin
-ownership to keep the Jenkins home. Let's prepare one with the following
-commands:
+#### Etape 1: Preparation du volume
+
+Préparez le répertoire du volume: nous avons besoin d'un répertoire séparé avec la propriété de l'administrateur pour garder le repertoire de travail de Jenkins. 
+
+Préparons-en un avec les commandes suivantes:
 
 `mkdir /var/jenkins_home`{{execute}}
 
+Attribuez ensuite les permissions suivantes:
+
 `chmod 755 /var/jenkins_home`{{execute}}
 
-Run the Jenkins container: Let's run the container as a daemon and give it a proper name with the following command:
+#### Etape 2: lancement du conteneur Jenkins: 
+
+Exécutons le conteneur en tant que démon et donnons-lui un nom correct avec la commande suivante:
 
 `docker run -d -u root --name jenkins -p 8080:8080 -p 50000:50000 -v /root/jenkins:/var/jenkins_home jenkins:1.651.1-alpine`{{execute}}
 
-All plugins and configurations get persisted to the host at _/root/jenkins_. Port 8080 opens the web dashboard, 50000 is used to communicate with other Jenkins agents. Finally, the image has an alpine base to reduce the size footprint.
+L'environnement a un serveur Jenkins s'exécutant en tant que conteneur Docker. Vous pouvez afficher l'état en utilisant la commande suivante:
 
-#### Load Dashboard
+`docker ps` {{execute}.
 
-You can load the Jenkins' dashboard via the following URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+Tous les plugins et configurations sont conservés sur l'hôte à l'adresse _ / root / jenkins_. 
+Le port 8080 ouvre le tableau de bord Web, 50000 est utilisé pour communiquer avec d'autres agents Jenkins. Enfin, l'image a une base alpine pour réduire l'encombrement de la taille.
 
-In the next steps, you'll use the dashboard to configure the plugins and start building Docker Images.
+#### Chargement du Tableau de Bord Jenkins
+
+Vous pouvez chargez le tableau de bord de Jenkins avec l'URL suivante:
+
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+
+Dans les étapes suivantes, vous utiliserez le tableau de bord pour configurer les plugins et commencer à créer des images Docker.
