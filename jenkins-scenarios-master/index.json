@@ -1,21 +1,21 @@
 {
     "pathwayTitle": "Jenkins",
-    "title": "Building Docker Images using Jenkins",
-    "description": "Learn how to configure Jenkins to build Docker Images",
+    "title": "Atelier Prise en main de l'outil CI/CD Jenkins",
+    "description": "Apprenez à configurer Jenkins pour créer des images Docker",
     "difficulty": "Advanced",
     "time": "15-20 minutes",
     "details": {
         "steps": [
             {
-                "title": "Launch Jenkins",
+                "title": "Demarrer Jenkins",
                 "text": "step1.md"
             },
             {
-                "title": "Configure Docker Plugin",
+                "title": "Configurer le plugin Docker",
                 "text": "step2.md"
             },
             {
-                "title": "Add Docker Agent",
+                "title": "Ajouter l'agent Docker",
                 "text": "step3.md"
             },
             {
