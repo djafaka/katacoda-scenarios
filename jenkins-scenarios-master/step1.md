@@ -1,6 +1,14 @@
 The environment has a Jenkins server running as a Docker container. You can view the status using `docker ps`{{execute}}.
 
-The command used to launch the container was:
+Prepare the volume directory: We need a separate directory with admin
+ownership to keep the Jenkins home. Let's prepare one with the following
+commands:
+
+`mkdir /var/jenkins_home`{{execute}}
+
+`chmod 755 /var/jenkins_home`{{execute}}
+
+Run the Jenkins container: Let's run the container as a daemon and give it a proper name with the following command:
 
 `docker run -d -u root --name jenkins -p 8080:8080 -p 50000:50000 -v /root/jenkins:/var/jenkins_home jenkins:1.651.1-alpine`{{execute}}
 
