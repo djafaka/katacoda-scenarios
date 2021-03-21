@@ -20,7 +20,7 @@ Exécutons le conteneur en tant que démon et donnons-lui un nom correct avec la
 
 L'environnement a un serveur Jenkins s'exécutant en tant que conteneur Docker. Vous pouvez afficher l'état en utilisant la commande suivante:
 
-`docker ps`{{execute}.
+`docker ps`{{execute}}
 
 Tous les plugins et configurations sont conservés sur l'hôte à l'adresse _ / root / jenkins_. 
 Le port 8080 ouvre le tableau de bord Web, 50000 est utilisé pour communiquer avec d'autres agents Jenkins. Enfin, l'image a une base alpine pour réduire l'encombrement de la taille.
