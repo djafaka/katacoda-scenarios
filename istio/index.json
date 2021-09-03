@@ -1,0 +1,58 @@
+{
+  "title": "LAB 01. Docker Introduction",
+  "description": "Ce scenario  vous montre les etapes de demarrage avec Docker CLI",
+  "details": {
+    "steps": [
+      {
+        "title": "Etape 1 - Se familiariser avec Docker CLI",
+        "text": "step1.md"
+      },
+      {
+        "title": "Etape 2 - Construire ses propres images Docker",
+        "text": "step2.md",
+         "answer": "step2-answer.md",
+        "courseData": "create-dockerignore.sh"
+      },
+      {
+        "title": "Step 3 - Exposition de ports",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Exposition de ports",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Monter des volumes Docker",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "index.html",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "files": [
+    "Dockerfile"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+  
+
+  
+}
+
+
