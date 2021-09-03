@@ -4,7 +4,7 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Install Istio",
+        "title": "Step 1 - Install, Deploy, Verify and Configure auto proxy injection, Check what is running...",
         "text": "step1.md"
       },
       {
@@ -48,7 +48,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu:1804"
+    "imageid": "centos"
   }
   
 
