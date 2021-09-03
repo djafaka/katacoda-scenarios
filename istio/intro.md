@@ -1,1 +1,5 @@
-Dans ce scénario, vous vous familiariserez avec Docker CLI et déploierez vos premiers conteneurs !
+In this firt scenario we will initialize our environment :
+- Deploy Istio
+- Verify Istio
+- Configure Auto Proxy Injection
+
