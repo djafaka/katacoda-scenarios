@@ -1,10 +1,10 @@
 {
-  "title": "LAB 01. Docker Introduction",
-  "description": "Ce scenario  vous montre les etapes de demarrage avec Docker CLI",
+  "title": "Istio Demo with Kubernetes",
+  "description": "This scenario install and configure the Istio demo",
   "details": {
     "steps": [
       {
-        "title": "Etape 1 - Se familiariser avec Docker CLI",
+        "title": "Step 1 - Install Istio",
         "text": "step1.md"
       },
       {
