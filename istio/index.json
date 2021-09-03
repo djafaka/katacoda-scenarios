@@ -1,6 +1,6 @@
 {
   "title": "Istio Demo with Kubernetes",
-  "description": "This workshop present some cool features of Istio using",
+  "description": "This workshop present some cool features of Istio using Kubernetes",
   "details": {
     "steps": [
       {
@@ -30,7 +30,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "centos"
+    "imageid": "ubuntu:1804"
   }
   
 
