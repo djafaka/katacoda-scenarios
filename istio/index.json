@@ -1,29 +1,11 @@
 {
   "title": "Istio Demo with Kubernetes",
-  "description": "This scenario install and configure the Istio demo",
+  "description": "This workshop present some cool features of Istio using",
   "details": {
     "steps": [
       {
         "title": "Step 1 - Install, Deploy, Verify and Configure auto proxy injection, Check what is running...",
         "text": "step1.md"
-      },
-      {
-        "title": "Etape 2 - Construire ses propres images Docker",
-        "text": "step2.md",
-         "answer": "step2-answer.md",
-        "courseData": "create-dockerignore.sh"
-      },
-      {
-        "title": "Step 3 - Exposition de ports",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4 - Exposition de ports",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5 - Monter des volumes Docker",
-        "text": "step5.md"
       }
     ],
     "intro": {
