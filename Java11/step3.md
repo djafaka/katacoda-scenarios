@@ -59,5 +59,6 @@ Java also has multiline comments (also called c-style) comments. They look like 
    This is the end of the comment. */
 </pre>
 
-Everything between `/*` and `*/ ` is ignored by the compiler.
+Everything between `/*` and `*/ ` is ignored by the compiler
 
+Go on, click the `Continue` button.
