@@ -1,1 +1,1 @@
-javac HelloWorld.java && java HelloWorld && echo "done"
+# javac HelloWorld.java && java HelloWorld && echo "done"
