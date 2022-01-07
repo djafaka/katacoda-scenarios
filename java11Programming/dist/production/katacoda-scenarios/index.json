@@ -1,0 +1,41 @@
+{
+  "title": "Introduction to Programming - Part 3",
+  "description": "This lesson focuses on operators. They're pretty important for doing anything useful.",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Operators",
+        "text": "step1_operators.md"
+      },
+      {
+        "title": "Binary Operators",
+        "text": "step2_binary_operators.md"
+      },
+      {
+        "title": "Binary Exercise",
+        "text": "step3_binary_exercise.md",
+        "answer": "solutions/ExampleBirthday.md"
+      },
+      {
+        "title": "Ternary Operators",
+        "text": "step4_ternary_operators.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    }
+  },
+  "files" : [
+    "Operators.java"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uisettings": "java",
+    "icon": "fa-java"
+  },
+  "backend": {
+    "imageid": "java8"
+  }
+}

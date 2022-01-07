@@ -1,0 +1,41 @@
+{
+  "title": "Introduction to Programming - Part 1",
+  "description": "An introduction to programming computers using Java",
+  "difficulty": "Beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Welcome!",
+        "text": "step1.md",
+        "verify": "verifications/step1verify.sh"
+      },
+      {
+        "title": "What Does it Mean?",
+        "text": "step2.md"
+      },
+      {
+        "title": "Doing Something Interesting",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+    "HelloWorld.java"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uisettings": "java",
+    "icon": "fa-java",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "java8"
+  }
+}
