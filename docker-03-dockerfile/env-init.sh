@@ -1,1 +1,0 @@
-echo "Votre environement est pret !"
